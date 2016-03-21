@@ -1,0 +1,181 @@
+
+pack.png
+size: 4096,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Brown Block
+  rotate: false
+  xy: 181, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Character Horn Girl
+  rotate: false
+  xy: 284, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Dirt Block
+  rotate: false
+  xy: 387, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Enemy Bug
+  rotate: false
+  xy: 490, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Gem Blue
+  rotate: false
+  xy: 593, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Gem Green
+  rotate: false
+  xy: 696, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Gem Orange
+  rotate: false
+  xy: 799, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Grass Block
+  rotate: false
+  xy: 902, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Heart
+  rotate: false
+  xy: 1005, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow East
+  rotate: false
+  xy: 1108, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow North
+  rotate: false
+  xy: 1417, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow North East
+  rotate: false
+  xy: 1211, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow North West
+  rotate: false
+  xy: 1314, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow Side West
+  rotate: false
+  xy: 1520, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow South
+  rotate: false
+  xy: 1829, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow South East
+  rotate: false
+  xy: 1623, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow South West
+  rotate: false
+  xy: 1726, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Shadow West
+  rotate: false
+  xy: 1932, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Stone Block
+  rotate: false
+  xy: 2035, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Tree Short
+  rotate: false
+  xy: 2138, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Tree Tall
+  rotate: false
+  xy: 2241, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Tree Ugly
+  rotate: false
+  xy: 2344, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+Water Block
+  rotate: false
+  xy: 2447, 5
+  size: 101, 171
+  orig: 101, 171
+  offset: 0, 0
+  index: -1
+cloud1Night
+  rotate: false
+  xy: 2, 63
+  size: 177, 113
+  orig: 177, 113
+  offset: 0, 0
+  index: -1
+cloud2Night
+  rotate: false
+  xy: 2, 2
+  size: 93, 59
+  orig: 93, 59
+  offset: 0, 0
+  index: -1

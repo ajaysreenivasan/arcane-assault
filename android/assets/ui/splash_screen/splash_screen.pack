@@ -1,0 +1,12 @@
+
+splash_screen.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+splash_image
+  rotate: false
+  xy: 1, 1
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
