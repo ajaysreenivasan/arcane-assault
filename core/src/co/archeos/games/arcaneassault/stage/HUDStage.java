@@ -6,29 +6,21 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+
 import co.archeos.games.arcaneassault.entity.ui.bar.HealthBar;
 import co.archeos.games.arcaneassault.entity.ui.bar.ManaBar;
-import co.archeos.games.arcaneassault.utils.GameConstants;
 import co.archeos.games.arcaneassault.model.GameWorld;
+import co.archeos.games.arcaneassault.utils.GameConstants;
 
 /**
  * Created by Ajay on 2015-06-03.
  */
-public class HUDStage extends Stage {
-    private final static String LOG_TAG_HUDSTAGE_ACT = "HUDStage: ACT";
-    private final static String LOG_TAG_HUDSTAGE_DRAW = "HUDStage: DRAW";
-    private final static String LOG_TAG_HUDSTAGE_RESIZE = "HUDStage: RESIZE";
-    private final static String LOG_TAG_HUDSTAGE_PAUSE = "HUDStage: PAUSE";
-    private final static String LOG_TAG_HUDSTAGE_RESUME = "HUDStage: RESUME";
-    private final static String LOG_TAG_HUDSTAGE_HIDE = "HUDStage: HIDE";
-    private final static String LOG_TAG_HUDSTAGE_DISPOSE = "HUDStage: DISPOSE";
-
+public class HUDStage extends AbstractStage {
     private final static int MAX_BUTTON_COUNT = GameConstants.GameScreen.HUDStage.HUDSTAGE_BUTTON_COUNT;
 
     private GameWorld mGameWorld;
@@ -112,7 +104,6 @@ public class HUDStage extends Stage {
     @Override
     public void draw() {
         super.draw();
-        Gdx.app.log(LOG_TAG_HUDSTAGE_DRAW, "Draw called.");
     }
 
     @Override

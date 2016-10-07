@@ -2,8 +2,8 @@ package co.archeos.games.arcaneassault.stage;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+
 import co.archeos.games.arcaneassault.ArcaneAssaultGame;
 import co.archeos.games.arcaneassault.entity.ui.bar.LoadingBar;
 import co.archeos.games.arcaneassault.utils.GameConstants;
@@ -12,17 +12,7 @@ import co.archeos.games.arcaneassault.utils.GameRunnable;
 /**
  * Created by Ajay on 2015-06-25.
  */
-public class LoadingStage extends Stage {
-    private final static String LOG_TAG_LOADINGSTAGE_ACT = "LoadingStage: ACT";
-    private final static String LOG_TAG_LOADINGSTAGE_DRAW = "LoadingStage: DRAW";
-    private final static String LOG_TAG_LOADINGSTAGE_RESIZE = "LoadingStage: RESIZE";
-    private final static String LOG_TAG_LOADINGSTAGE_PAUSE = "LoadingStage: PAUSE";
-    private final static String LOG_TAG_LOADINGSTAGE_RESUME = "LoadingStage: RESUME";
-    private final static String LOG_TAG_LOADINGSTAGE_HIDE = "LoadingStage: HIDE";
-    private final static String LOG_TAG_LOADINGSTAGE_DISPOSE = "LoadingStage: DISPOSE";
-
-    private ArcaneAssaultGame mArcaneAssaultGame;
-
+public class LoadingStage extends AbstractStage {
     private GameRunnable mLoadingRunnable = null;
     private GameRunnable mOnLoadFinishedRunnable = null;
 
@@ -68,7 +58,7 @@ public class LoadingStage extends Stage {
             mLoadingRunnable.run();
         }
 
-        Gdx.app.log(LOG_TAG_LOADINGSTAGE_ACT, "" + mArcaneAssaultGame.getAssetManager().getProgress());
+        Gdx.app.log(LOG_TAG_STAGE_ACT, "" + mArcaneAssaultGame.getAssetManager().getProgress());
 
         // if loading is complete, touch the screen to move to the next screen
         // TODO: Once loading is finished, replace with "TOUCH TO BEGIN" message

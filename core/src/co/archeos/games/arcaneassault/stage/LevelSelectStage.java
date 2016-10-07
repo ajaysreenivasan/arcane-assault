@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -18,18 +17,8 @@ import co.archeos.games.arcaneassault.utils.PagedScrollPane;
 /**
  * Created by Ajay on 2015-06-25.
  */
-public class LevelSelectStage extends Stage {
-    private final static String LOG_TAG_LEVELSELECTSTAGE_ACT = "LevelSelectStage: ACT";
-    private final static String LOG_TAG_LEVELSELECTSTAGE_DRAW = "LevelSelectStage: DRAW";
-    private final static String LOG_TAG_LEVELSELECTSTAGE_RESIZE = "LevelSelectStage: RESIZE";
-    private final static String LOG_TAG_LEVELSELECTSTAGE_PAUSE = "LevelSelectStage: PAUSE";
-    private final static String LOG_TAG_LEVELSELECTSTAGE_RESUME = "LevelSelectStage: RESUME";
-    private final static String LOG_TAG_LEVELSELECTSTAGE_HIDE = "LevelSelectStage: HIDE";
-    private final static String LOG_TAG_LEVELSELECTSTAGE_DISPOSE = "LevelSelectStage: DISPOSE";
-
-
-    private ArcaneAssaultGame mArcaneAssaultGame;
-    private TextureAtlas mLevelSelectStageAtlas;
+public class LevelSelectStage extends AbstractStage {
+     private TextureAtlas mLevelSelectStageAtlas;
 
     private Skin mLevelSelectStageSkin;
 

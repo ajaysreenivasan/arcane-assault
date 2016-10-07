@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -18,16 +17,7 @@ import co.archeos.games.arcaneassault.utils.GameConstants;
 /**
  * Created by Ajay on 2015-06-25.
  */
-public class MainMenuStage extends Stage {
-    private final static String LOG_TAG_MAINMENUSTAGE_ACT = "MainMenuStage: ACT";
-    private final static String LOG_TAG_MAINMENUSTAGE_DRAW = "MainMenuStage: DRAW";
-    private final static String LOG_TAG_MAINMENUSTAGE_RESIZE = "MainMenuStage: RESIZE";
-    private final static String LOG_TAG_MAINMENUSTAGE_PAUSE = "MainMenuStage: PAUSE";
-    private final static String LOG_TAG_MAINMENUSTAGE_RESUME = "MainMenuStage: RESUME";
-    private final static String LOG_TAG_MAINMENUSTAGE_HIDE = "MainMenuStage: HIDE";
-    private final static String LOG_TAG_MAINMENUSTAGE_DISPOSE = "MainMenuStage: DISPOSE";
-
-    private ArcaneAssaultGame mArcaneAssaultGame;
+public class MainMenuStage extends AbstractStage {
     private TextureAtlas mMainMenuStageAtlas;
 
     private Skin mMainMenuStageSkin;
@@ -92,7 +82,7 @@ public class MainMenuStage extends Stage {
         mOptionsButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
-                Gdx.app.log(LOG_TAG_MAINMENUSTAGE_ACT, "OPTIONS PRESSED");
+                Gdx.app.log(LOG_TAG_STAGE_ACT, "OPTIONS PRESSED");
             }
         });
         mMenuTable.add(mOptionsButton);

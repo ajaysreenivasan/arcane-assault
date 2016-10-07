@@ -3,6 +3,7 @@ package co.archeos.games.arcaneassault.stage;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
 import co.archeos.games.arcaneassault.entity.common.Projectile;
 import co.archeos.games.arcaneassault.entity.common.Sorcerer;
 import co.archeos.games.arcaneassault.entity.ui.bar.LoadingBar;
@@ -11,20 +12,11 @@ import co.archeos.games.arcaneassault.environment.BackgroundObject;
 import co.archeos.games.arcaneassault.model.GameWorld;
 import co.archeos.games.arcaneassault.utils.AssetManager;
 import co.archeos.games.arcaneassault.utils.GameConstants;
-import com.uwsoft.editor.renderer.Overlap2DStage;
 
 /**
  * Created by Ajay on 2015-06-03.
  */
-public class GameStage extends Overlap2DStage {
-    private final static String LOG_TAG_GAMESTAGE_ACT = "GameStage: ACT";
-    private final static String LOG_TAG_GAMESTAGE_DRAW = "GameStage: DRAW";
-    private final static String LOG_TAG_GAMESTAGE_RESIZE = "GameStage: RESIZE";
-    private final static String LOG_TAG_GAMESTAGE_PAUSE = "GameStage: PAUSE";
-    private final static String LOG_TAG_GAMESTAGE_RESUME = "GameStage: RESUME";
-    private final static String LOG_TAG_GAMESTAGE_HIDE = "GameStage: HIDE";
-    private final static String LOG_TAG_GAMESTAGE_DISPOSE = "GameStage: DISPOSE";
-
+public class GameStage extends AbstractStage {
     private final static float GAMESTAGE_VIEWPORT_WIDTH = GameConstants.GameScreen.GameStage
             .GAMESTAGE_VIEWPORT_WIDTH;
     private final float GAMESTAGE_VIEWPORT_HEIGHT = GameConstants.GameScreen.GameStage
@@ -80,7 +72,7 @@ public class GameStage extends Overlap2DStage {
 
     @Override
     public void act(float delta) {
-        Gdx.app.log(LOG_TAG_GAMESTAGE_ACT, "Act called.");
+        Gdx.app.log(LOG_TAG_STAGE_ACT, "Act called.");
 
         mBackground.act(delta);
 
@@ -96,7 +88,7 @@ public class GameStage extends Overlap2DStage {
     public void draw() {
         super.draw();
 
-        Gdx.app.log(LOG_TAG_GAMESTAGE_DRAW, "Draw called.");
+        Gdx.app.log(LOG_TAG_STAGE_DRAW, "Draw called.");
 
 //        mSpriteBatch.setProjectionMatrix(mGameCamera.combined);
 //

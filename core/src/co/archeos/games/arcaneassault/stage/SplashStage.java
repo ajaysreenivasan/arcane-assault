@@ -2,9 +2,9 @@ package co.archeos.games.arcaneassault.stage;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
+
 import co.archeos.games.arcaneassault.ArcaneAssaultGame;
 import co.archeos.games.arcaneassault.utils.GameConstants;
 import co.archeos.games.arcaneassault.utils.GameRunnable;
@@ -12,16 +12,7 @@ import co.archeos.games.arcaneassault.utils.GameRunnable;
 /**
  * Created by Ajay on 2015-06-25.
  */
-public class SplashStage extends Stage {
-    private final static String LOG_TAG_SPLASHSTAGE_ACT = "SplashStage: ACT";
-    private final static String LOG_TAG_SPLASHSTAGE_DRAW = "SplashStage: DRAW";
-    private final static String LOG_TAG_SPLASHSTAGE_RESIZE = "SplashStage: RESIZE";
-    private final static String LOG_TAG_SPLASHSTAGE_PAUSE = "SplashStage: PAUSE";
-    private final static String LOG_TAG_SPLASHSTAGE_RESUME = "SplashStage: RESUME";
-    private final static String LOG_TAG_SPLASHSTAGE_HIDE = "SplashStage: HIDE";
-    private final static String LOG_TAG_SPLASHSTAGE_DISPOSE = "SplashStage: DISPOSE";
-
-    private ArcaneAssaultGame mArcaneAssaultGame;
+public class SplashStage extends AbstractStage {
     private TextureAtlas mSplashStageAtlas;
     private Image mSplashImage;
 
